@@ -1,0 +1,40 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  font-family: 'SFPixelateRegular';
+}
+
+.about {
+  margin: 35px 350px;
+  font-size: 22px;
+  color: #56456C;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.txt-container {
+  /* max-width: 50%; */
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 80%; */
+  /* background-color: aqua; */
+}
+
+img {
+  height: 500px;
+  width: 500px;
+  margin: 0 150px 0 0;
+}
+
+.customers {
+  background-color: #EDF2F9;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}

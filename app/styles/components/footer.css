@@ -1,0 +1,20 @@
+.footer{
+  padding: 0 20vw;
+  display: flex;
+  display: row;
+  justify-content: space-between;
+  background-color: #333333;
+  color: white;
+  font-family: 'SFPixelateRegular';
+  align-self: flex-end;
+}
+
+ul {
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-decoration: none;
+}
