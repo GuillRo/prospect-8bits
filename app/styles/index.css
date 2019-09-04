@@ -35,6 +35,7 @@ img {
   background-color: #EDF2F9;
   display: flex;
   flex-direction: column;
+  color: #56456C;
   /* justify-content: center; */
   align-items: center;
 }
