@@ -1,3 +1,17 @@
-<p>popular article</p>
+<div>
+  <div>
+    <p>Create a new blog post</p>
+    <form action="" local-class="form-blog">
+      <input type="text" placeholder="title">
+      <input type="text" placeholder="body">
+      <button></button>
+    </form>
+  </div>
 
-<p>article list</p>
+  <div local-class="blog-list">
+    {{#each this.model as |blog|}}
+    <BlogCard @blog={{blog}} />
+    {{/each}}
+  </div>
+
+</div>

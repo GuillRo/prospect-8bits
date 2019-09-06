@@ -1,16 +1,9 @@
 <div local-class="carousel">
   <button onclick={{action "previousItem"}}> &lt; </button>
   <div local-class="carousel-card">
-    {{!-- <img src={{}} alt="Happy customer's face"> --}}
-    {{#each this.users as |user|}}
-    <div>{{user.name}}</div>
-    {{/each}}
-    <div>comment</div>
-    <div>name</div>
-    <div>company</div>
-    {{!-- {{#each this.model as |tt|}}
-    <div>{tt.company}}</div>
-    {{/each}} --}}
+    <div>{{customer.name}}</div>
+    <div>{{customer.company}}</div>
+    <div>{{customer.comment}}</div>
   </div>
   <button onclick={{action "nextItem"}}>&gt;</button>
 </div>

@@ -1,0 +1,22 @@
+.customer-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  margin: 15px 0;
+}
+
+.img-round {
+  width: 75px;
+  height: 75px;
+  margin: 0;
+}
+
+.company-name {
+  color: deeppink;
+}
+
+.comment{
+  text-align: center;
+}

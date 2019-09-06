@@ -1,11 +1,8 @@
 .features{
-  display: flex;
-  flex-direction: column;
-  /* flex-grow: 1; */
+text-align: center;
+margin: 35px 0;
 }
 
-.content {
-  display: flex;
-  flex-grow: 1;
-  flex: 1; 
+.wip {
+  margin: 0;
 }

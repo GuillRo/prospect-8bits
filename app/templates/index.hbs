@@ -19,8 +19,8 @@
   <div local-class="txt-container customers">
     <h1>Happy customers</h1>
     <p>See what our customers say about us</p>
-    <Carousel @users={{this.model}} />
-    {{!-- {{#each this.model as |users|}}
-    {{/each}} --}}
+    {{#each this.model as |customer|}}
+    <CustomerCard @customer={{customer}}/>
+    {{/each}}
   </div>
 </div>
