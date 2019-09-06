@@ -4,14 +4,14 @@
     <form action="" local-class="form-blog">
       {{input value=newBlogTitle placeholder="title" local-class="input"}}
       {{input value=newBlogBody placeholder="body" local-class="input"}}
-      <button {{action 'createBlogpost'}} local-class="button">Create</button>
+      <button {{action "createBlogpost"}} local-class="button">Create</button>
     </form>
   </div>
 
   <div local-class="blog-list">
     {{#each model as |blog|}}
-    <BlogCard @blog={{blog}} />
+    {{!-- {{BlogCard  deleteAction=(action "deleteBlogpost") blog=blog }} --}}
+    <BlogCard  @blog={{blog}} />
     {{/each}}
   </div>
-
 </div>

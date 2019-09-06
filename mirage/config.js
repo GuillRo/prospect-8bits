@@ -1,7 +1,7 @@
 export default function () {
   this.namespace = '/api';
 
-  let postCounter = 2;
+  // let postCounter = 2;
   let data = [
     {
       id: 1,
@@ -23,10 +23,10 @@ export default function () {
     return { data: data };
   })
 
-  this.post('/blogposts', function (db, request) {
-    console.log("post")
-    postCounter += 1;
-    const newRecord = {}
+  this.post('/blogposts', function () {
+    // postCounter += 1;
+    // console.log("post")
+    // const newRecord = {}
     // data.push()
     // console.log(request.requestBody)
   })
