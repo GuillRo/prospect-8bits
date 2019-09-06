@@ -5,7 +5,7 @@
 }
 
 .about {
-  margin-top: 35px;
+  margin: 35px 0;
   font-size: 22px;
   color: #56456C;
   display: inline-block;
@@ -19,15 +19,10 @@ display:flex;
 flex-grow: 1;
 flex-direction: column;
 width: 50%;
-
-  /* width: 35%;
-  float: right; */
-  /* max-width: 50%; */
-  /* padding-right: 15%; */
 }
 
 .txt {
-  padding-right: 25%;
+  max-width: 30vw;
 }
 
 .img-container {
@@ -36,21 +31,11 @@ width: 50%;
   width: 50%;
   justify-content: center;
   align-items: center;
-  /* width: 35%;
-  padding-left: 15%;
-  float: left; */
-  /* margin-left: 15vw; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .img {
   max-height: 500px;
   max-width: 500px;
-  /* height: 35vw;
-  width: 35vw; */
-  /* margin: 0 150px 0 0; */
 }
 
 .customers {
@@ -58,6 +43,6 @@ width: 50%;
   display: flex;
   flex-direction: column;
   color: #56456C;
-  /* justify-content: center; */
   align-items: center;
+  padding-bottom: 35px;
 }

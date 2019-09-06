@@ -24,6 +24,7 @@ export default function () {
   })
 
   this.post('/blogposts', function (db, request) {
+    console.log("post")
     postCounter += 1;
     const newRecord = {}
     // data.push()
