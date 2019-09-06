@@ -1,4 +1,7 @@
 <div local-class="blog-card">
-  <p>{{blog.title}}</p>
+  <div local-class="title">
+    <p>{{blog.title}}</p>
+  </div>
   <p>{{blog.body}}</p>
+  <button {{action 'deleteBlogpost'}} local-class='button'>Delete</button>
 </div>

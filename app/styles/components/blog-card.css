@@ -1,5 +1,27 @@
 .blog-card {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   text-align: center;
   width: 1000px;
+  margin: 25px 0;
+  width: 550px;
+  padding: 5px 0 20px 0;
+  background-color: #EDF2F9;
+}
+
+.button {
+  font-family: 'SFPixelateRegular';
+  background-color: #E176CE;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.title {
+  color: deeppink;
+  font-weight: bold;
+  font-size: 22px;
 }

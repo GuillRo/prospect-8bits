@@ -1,15 +1,15 @@
-<div>
-  <div>
+<div local-class="blog">
+  <div local-class="form-container">
     <p>Create a new blog post</p>
     <form action="" local-class="form-blog">
-      <input type="text" placeholder="title">
-      <input type="text" placeholder="body">
-      <button></button>
+      {{input value=newBlogTitle placeholder="title" local-class="input"}}
+      {{input value=newBlogBody placeholder="body" local-class="input"}}
+      <button {{action 'createBlogpost'}} local-class="button">Create</button>
     </form>
   </div>
 
   <div local-class="blog-list">
-    {{#each this.model as |blog|}}
+    {{#each model as |blog|}}
     <BlogCard @blog={{blog}} />
     {{/each}}
   </div>

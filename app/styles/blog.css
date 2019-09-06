@@ -1,7 +1,36 @@
+.blog {
+  font-family: 'SFPixelateRegular';
+}
+
+.form-container {
+  text-align: center;
+  margin-top: 60px;
+}
+
 .form-blog {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.input {
+  margin: 10px 0;
+  font-family: 'SFPixelateRegular';
+border:1px solid #8934BA;
+border-radius: 2%;
+padding: 5px;
+}
+
+.button {
+  font-family: 'SFPixelateRegular';
+  background-color: #E176CE;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+}
+
+.button:hover {
+  cursor: pointer;
 }
 
 .blog-list {

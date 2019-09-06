@@ -2,8 +2,6 @@ import Route from '@ember/routing/route';
 
 export default Route.extend({
   model() {
-    // return this.get('store').findAll('customer');
-
     return [{
       id: 1,
       type: "customers",
@@ -33,10 +31,5 @@ export default Route.extend({
       comment: "I have tried out every prospecting tool on the market and Prospect.io is hands down the best one I have come across. I have recommended their platform to all my colleagues and will continue to do so, as it is a vital piece of any sales stack.",
       img: "goofy.png"
     }]
-
-    // return this.get('store').find('customer', { id: 1 }).then(users => {
-    //   return users.get('firstObject');
-    // });
-    // return this.get('store').find('customer', params.id);
   }
 });
