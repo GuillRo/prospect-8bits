@@ -3,5 +3,5 @@
     <p>{{blog.title}}</p>
   </div>
   <p>{{blog.body}}</p>
-  <button {{action "deleteBlogpost"}} local-class="button">Delete</button>
+  <button {{action "delete" blog.id}} local-class="button">Delete</button>
 </div>

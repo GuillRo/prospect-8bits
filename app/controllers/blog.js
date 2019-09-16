@@ -11,8 +11,14 @@ export default Controller.extend({
       })
       newRecord.save()
     },
-    deleteBlogpost() {
-      console.log("gg")
+    deleteBlogpost(id) {
+      // this.store.findRecord('blogpost', id).then(post => {
+      //   post.deleteRecord();
+      //   post.save();
+      // })
+      const post = this.store.peekRecord('blogpost', id)
+      post.deleteRecord();
+      post.save();
     }
   }
 });

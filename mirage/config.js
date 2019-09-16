@@ -1,7 +1,6 @@
 export default function () {
   this.namespace = '/api';
 
-  // let postCounter = 2;
   let data = [
     {
       id: 1,
@@ -12,7 +11,7 @@ export default function () {
       }
     }, {
       id: 2,
-      type: "blogpost",
+      type: "blogposts",
       attributes: {
         title: 'Blog post 2',
         body: "Boost your sales tomorrow"
@@ -23,11 +22,27 @@ export default function () {
     return { data: data };
   })
 
-  this.post('/blogposts', function () {
-    // postCounter += 1;
-    // console.log("post")
-    // const newRecord = {}
-    // data.push()
-    // console.log(request.requestBody)
-  })
+  // this.get('/blogposts')
+  this.post('/blogposts')
+  // this.get('/blogposts/:id')
+  this.delete('/blogposts/:id')
+
+
+  // this.resource('blogposts')
+
+
+  // this does not work and i don't get an id
+
+  // this.post('/blogposts', function (db, request) {
+  //   // console.log(JSON.parse(request.requestBody).data)
+
+  //   const newRecord = JSON.parse(request.requestBody).data
+  //   newRecord.id = data.length  + 1
+  //   console.log(newRecord)
+  //   data.push(newRecord)
+  //   console.log(data)
+  //   return { data: data }
+  // })
+
+
 }

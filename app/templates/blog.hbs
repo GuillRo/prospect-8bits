@@ -10,8 +10,8 @@
 
   <div local-class="blog-list">
     {{#each model as |blog|}}
-    {{!-- {{BlogCard  deleteAction=(action "deleteBlogpost") blog=blog }} --}}
-    <BlogCard  @blog={{blog}} />
+    {{!-- {{blog-card  deleteAction=(action "deleteBlogpost") blog=blog }} --}}
+    <BlogCard  @deleteAction={{action "deleteBlogpost"}} @blog={{blog}} />
     {{/each}}
   </div>
 </div>

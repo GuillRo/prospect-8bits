@@ -1,7 +1,9 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-  deleteBlogpost() {
-    console.log("gg")
+  actions: {
+    delete(id) {
+      this.deleteAction(id);
+    }
   }
 });
